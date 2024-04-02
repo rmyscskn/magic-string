@@ -36,9 +36,6 @@ def test_saucedemo_login():
     sleep(3)
     assert 'Sauce Labs Backpack' in driver.page_source
 
-
-# Pytest ile testi çalıştırmak için terminalde aşağıdaki komutu kullanabilirsiniz:
-# pytest test_saucedemo.py
     
 def test_sauce_demo():
     # WebDriver konfigürasyonu
@@ -113,6 +110,4 @@ def test_checkout_complete(browser):
     sleep(3)
     # Checkout işleminin tamamlandığını doğrula
     assert checkout_text in browser.page_source
-
-# Pytest ile testi çalıştırmak için terminalde aşağıdaki komutu kullanabilirsiniz:
-# pytest test_checkout.py
+    
